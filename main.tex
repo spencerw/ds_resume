@@ -13,7 +13,7 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue]{hyperref}
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
@@ -179,50 +179,50 @@
       {Simulating the assembly of terrestrial planets}{}
       {University of Washington, Astronomy Department}{Jan 2018 \textbf{--} Present}
         \resumeItemListStart
-            \resumeItem{Designed, ran and analyzed a suite of N-body simulations that follow the planet formation process from $10^{6}$ asteroid-sized bodies up to full terrestrial worlds (Python, Numpy, Pandas, Git)}
-            \resumeItem{Extended an existing large-scale hydrodynamics code to model collisions between solid bodies (C++, Git)}
-            \resumeItem{Tested, debugged and ran large-scale simulations across multiple compute nodes on a variety of national supercomputers (C++, Git, Bash)}
-            \resumeItem{Created and developed set of analysis tools to track the orbits of particles and follow their collision histories (Python, Numpy, Pandas, Git)}
-            \resumeItem{Led weekly meetings to train and mentor undergraduate researchers to use python data analysis tools, develop modules for our N-body simulation code, and run supercomputer simulations}
+        	    \resumeItem{Designed, proposed and executed a \$450,000 research grant project to model the planet formation process (Python, Numpy, Pandas, Git)}
+            \resumeItem{Tested, debugged and ran highly parallel simulations across multiple compute nodes on a variety of national supercomputers (C++, Git, Bash)}
+            \resumeItem{Extended a large-scale hydrodynamics code to model collisions between solid bodies (C++, Git)}
+            \resumeItem{Created and developed set of analysis tools ({\sc \href{https://github.com/spencerw/CollisionTools}{KeplerOrbit}}, {\sc \href{https://github.com/spencerw/KeplerOrbit}{CollisionTools}}) to track the evolution of large collections of particles (Python, Numpy, Pandas, Git)}
+            \resumeItem{Led weekly meetings to train and mentor undergraduate researchers to use python data analysis tools, develop modules for our N-body code, and run simulations}
         \resumeItemListEnd
     
     \resumeSubheading
       {Detecting stellar flares with the Transiting Exoplanet Survey Satellite}{}
       {University of Washington, DIRAC Institute}{Jun 2019 \textbf{--} Jun 2020}
         \resumeItemListStart
-            \resumeItem{Designed, tested and used an analysis pipeline to construct a catalog of non-periodic flaring events in time series data of brightness for tens of thousands of stars (Python, Numpy, Pandas, Git)}
-            \resumeItem{Used a gaussian process machine learning model to automatically remove periodic signals and quantify the reliability of flare detections}
+        	    \resumeItem{Built a time-series analysis pipeline to find over 7,000 new flare stars in NASA space telescope data (Python, Numpy, Pandas, Git)}
+	    \resumeItem{Obtained new rotation period measurements for over 80,000 stars using a gaussian process model}
         \resumeItemListEnd
         
       \resumeSubheading
-      {Synthesizing new data from existing simulation results}{}
+      {Data synthesis from N-body simulations}{}
       {University of Washington, eScience Institute}{Jan 2023 \textbf{--} Present}
         \resumeItemListStart
-            \resumeItem{Designed a pipeline to train a generative adversarial network to produce an infinite supply of qualitatively similar, but numerically distinct simulation results to apply to chaotic systems (Python, PyTorch, Pandas, Numpy, Git)}
-            \resumeItem{Verified the accuracy and robustness of the model through a combination of statistical tests and additional simulations}
+        	   \resumeItem{Developed a pipeline to construct initial conditions for planet formation models by training a generative adversarial network (GAN) on existing results (Python, PyTorch, Pandas, Numpy, Git)}
+            \resumeItem{Saved over 900,000 CPU hours of computation by using the GAN to skip the first phase of our simulations}
         \resumeItemListEnd
         
         \resumeSubheading
       {Exploring parallel algorithms for spatial tree traversal}{}
       {University of Illinois Urbana-Champaign, Computer Science Department}{Jun 2019 \textbf{--} Apr 2021}
         \resumeItemListStart
-            \resumeItem{Participated in a multi-institution interdisciplinary collaboration to develop and test {\sc paratreet}, a toolkit for quickly testing and tuning parallel spatial tree traversal algorithms (C++, Python, Bash, Git)}
-            \resumeItem{Worked with a team of computer scientists to apply and test their algorithms on a number of real-world astronomy applications}
+            \resumeItem{Participated in a interdisciplinary collaboration to develop {\sc \href{https://paratreet.github.io/}{paratreet}}, a toolkit for quickly testing and tuning parallel spatial tree traversal algorithms (C++, Python, Bash, Git)}
+            \resumeItem{Worked with a team of computer scientists to apply and test their algorithms on a number of real-world astronomy applications and reduce force calculation times for our simulations by a factor of 30}
         \resumeItemListEnd
         
-        \resumeSubheading
-      {Verifying the robustness of galaxy simulation codes}{}
-      {University of Washington, Astronomy Department}{Oct 2015 \textbf{--} Dec 2016}
-        \resumeItemListStart
-            \resumeItem{Ran and analyzed a set of hydrodynamics simulations to assess the scientific validity of the most commonly used galaxy simulation codes (C++, Python, Numpy, Bash, Git)}
-            \resumeItem{Worked with a mult-national team from over thirty institutions to highlight and understand and reconcile differences between state-of-the-art galaxy simulation codes asked to solve an identical problem}
-        \resumeItemListEnd
+       % \resumeSubheading
+      %{Verifying the robustness of galaxy simulation codes}{}
+      %{University of Washington, Astronomy Department}{Oct 2015 \textbf{--} Dec 2016}
+        %\resumeItemListStart
+           % \resumeItem{Ran and analyzed a set of hydrodynamics simulations to assess the scientific validity of the most commonly used galaxy simulation codes (C++, Python, Numpy, Bash, Git)}
+            %\resumeItem{Worked with a mult-national team from over thirty institutions to highlight and understand and reconcile differences between state-of-the-art galaxy simulation codes asked to solve an identical problem}
+        %\resumeItemListEnd
     
     \resumeSubheading
       {Graduate teaching assistant}{}
       {University of Washington, Astronomy Department}{Oct 2015 \textbf{--} Jun 2020}
         \resumeItemListStart
-            \resumeItem{Led weekly discussion sections, graded assignments and occasionally preformed lectures and designed homework exercises for undergraduate students}
+            \resumeItem{Led weekly discussion sections, graded assignments, preformed lectures and designed homework exercises for undergraduate students}
             \resumeItem{Collaborated with a team of other teaching assistants to ensure assignments, quizzes and exams were graded consistently and fairly}
         \resumeItemListEnd
         
@@ -236,7 +236,7 @@
     \small{\item{
         \textbf{Programming:}{ C++, Python, NumPy, Pandas, PyTorch, scikit-learn, matplotlib, Seaborn, SQL \\ \vspace{3pt}
         
-        \textbf{Communication:}{ 3 first-authored publications, 3 co-authored publications, 7 conference talks, 3 conference posters, 20 pop-sci articles published} \\ \vspace{3pt}
+        \textbf{Communication:}{ 3 first-authored publications, 3 co-authored publications, 7 conference talks, 3 conference posters, 20 pop-sci articles published through \href{https://astrobites.org/}{astrobites}} \\ \vspace{3pt}
         
         \textbf{Leadership:}{ Worked on 5 separate science collaboration teams, Mentored and directed research for 6 undergraduate students} \\ \vspace{3pt}
     }}}
