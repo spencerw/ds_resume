@@ -40,12 +40,6 @@
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-\newcommand{\PaperEntry}[6]{\noindent #1, ``{#2}", \textit{#3} \textbf{#4}, #5 (#6).}
-\newcommand{\ArxivEntry}[4]{\noindent #1, ``{#2}", \textit{#3} (#4).}
-
-\newcommand{\ProposalEntry}[3]{#1 \hfill {\em #2} \\ \textit{#3}}
-\newcommand{\ConferenceEntry}[2]{#1 \hfill {\em #2}}
-
 % Adjust margins
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
@@ -144,8 +138,6 @@
     $|$
     \faAt \hspace{.5pt} \href{mailto:spencerw530@gmail.com}{spencerw530@gmail.com}
     $|$
-    \faGlobe \hspace{.5pt} \href{https://spencerw.github.io}{Website}
-    $|$
     \faGithub \hspace{.5pt} \href{https://github.com/spencerw}{GitHub}
     $|$
     \faLinkedinSquare \hspace{.5pt} \href{https://www.linkedin.com/in/scwallace7}{LinkedIn}
@@ -163,66 +155,48 @@
     \resumeEducationHeading
       {University of Washington
       }{Seattle, Washington}
-      {PhD Astronomy}{Oct 2015 \textbf{--} August 2023}{Thesis: Planetesimal Accretion in the Solar System and Beyond}{}
+      {PhD Astrophysics}{August 2023}{}{}
     
     \resumeEducationHeading
       {University of Arizona}
       {Tucson, Arizona}
-      {BS Computer Science, Astronomy and Physics}{Aug 2009 \textbf{--} May 2014}{Thesis: Turbulent Entrainment in 1D Stellar Evolution Models}{}
+      {BS Computer Science, Astronomy and Physics}{May 2014}{}{}
     
   \resumeSubHeadingListEnd
 
 
 
-%----------- RESEARCH EXPERIENCE -----------
+%----------- EXPERIENCE -----------
 
-\section{Research Experience}
+\section{Experience}
   \vspace{3pt}
   \resumeSubHeadingListStart
   
     \resumeSubheading
-      {Simulating the assembly of terrestrial planets}{}
-      {University of Washington, Astronomy Department}{Jan 2018 \textbf{--} August 2023}
+      {Postdoctoral Researcher}{}
+      {University of Washington, Astronomy Department}{September 2023 \textbf{--} Present}
         \resumeItemListStart
-        	    \resumeItem{Designed, proposed and executed a \$450,000 NSF project to model the planet formation process using N-body simulations (Python, Numpy, Pandas, Git)}
-            \resumeItem{Tested, debugged and ran both CPU and GPU-based simulations on a number of HPC clusters, including SDSC Expanse (C++, Git, Bash)}
-            \resumeItem{Extended the large-scale hydrodynamics code {\sc \href{https://github.com/N-BodyShop/changa}{ChaNGa}} to model collisions between solid bodies (C++, Git)}
-            %\resumeItem{Created and developed set of analysis tools ({\sc \href{https://github.com/spencerw/CollisionTools}{KeplerOrbit}}, {\sc \href{https://github.com/spencerw/KeplerOrbit}{CollisionTools}}) to track the evolution of large collections of particles (Python, Numpy, Pandas, Git)}
-            \resumeItem{Led weekly meetings to train and mentor undergraduate researchers to use python data analysis tools, develop modules for our N-body code, and run simulations}
+        	   \resumeItem{Performed profiling and performance tuning for the tree-based N-body code {\sc \href{https://github.com/N-BodyShop/changa}{ChaNGa}} on a high-performance computing cluster}
+	   \resumeItem{Optimized and streamlined the host to GPU memory transfer that takes place during each step, resulting in a 10\% speedup over the existing benchmarks}
+	   \resumeItem{Collaborated with a specialist at the Texas Advanced Computing Center to streamline and prepare our codebase for deployment on their upcoming Grace Hopper GPU nodes}
         \resumeItemListEnd
         
-      \resumeSubheading
-      {Data synthesis from N-body simulations}{}
-      {University of Washington, eScience Institute}{Jan 2023 \textbf{--} August 2023}
+     \resumeSubheading
+      {Research Assistant}{}
+      {University of Washington, Astronomy Department}{October 2019 \textbf{--} August 2023}
         \resumeItemListStart
-        	   \resumeItem{Developed a pipeline to construct initial conditions for planet formation models by training a generative adversarial network (GAN) on existing results (Python, PyTorch, Pandas, Numpy, Git)}
-            \resumeItem{Saved over 900,000 CPU hours by using the GAN to skip the first phase of our simulations}
+        	   \resumeItem{Designed, proposed and executed a \$450,000 National Science Foundation-funded research project to simulate the formation of Earth-like planets using a high-performance computing cluster}
+	   \resumeItem{Implemented a new physics module in the N-body code  {\sc \href{https://github.com/N-BodyShop/changa}{ChaNGa}} to track collisions between solid bodies, allowing me to simulate resolutions 100x finer than any existing studies}
+	   \resumeItem{Trained and mentored 5 undergraduate students while they deployed and analyzed simulations on the university's local HPC cluster}
+	   \resumeItem{Produced a coauthored \href{https://doi.org/10.1109/IPDPS53621.2022.00079}{IEEE publication} while helping to develop {\sc \href{https://paratreet.github.io/}{paratreet}}, a toolkit for quickly testing and tuning parallel tree traversal algorithms (C++, Python, Bash, Git)}
         \resumeItemListEnd
         
-            
- \resumeSubheading
-      {Verifying the robustness of galaxy simulation codes}{}
-      {University of Washington, Astronomy Department}{Oct 2015 \textbf{--} Dec 2016}
+       \resumeSubheading
+      {Teaching Assistant}{}
+      {University of Washington, Astronomy Department}{October 2015 \textbf{--} September 2019}
         \resumeItemListStart
-            \resumeItem{Ran and analyzed a set of hydrodynamics simulations to assess the scientific validity of the most commonly used galaxy simulation codes (C++, Python, Numpy, Bash, Git)}
-            \resumeItem{Worked to implement an energy injection scheme for stellar supernova events that behaves consistently across a number of grid-based and particle-based codes}
-            \resumeItem{Collaborated with a team from over thirty institutions to highlight and understand differences between state-of-the-art galaxy simulation codes}
-        \resumeItemListEnd
-        
-        \resumeSubheading
-      {Exploring parallel algorithms for spatial tree traversal}{}
-      {University of Illinois Urbana-Champaign, Computer Science Department}{Jun 2019 \textbf{--} Apr 2021}
-        \resumeItemListStart
-            \resumeItem{Participated in a interdisciplinary collaboration to develop {\sc \href{https://paratreet.github.io/}{paratreet}}, a toolkit for quickly testing and tuning spatial tree traversal algorithms in an HPC environment (C++, Python, Bash, Git)}
-            \resumeItem{Worked with a team of computer scientists to apply and test their algorithms on a number of real-world astronomy applications and reduce force calculation times for our simulations by a factor of 30}
-        \resumeItemListEnd
-    
-    \resumeSubheading
-      {Graduate teaching assistant}{}
-      {University of Washington, Astronomy Department}{Oct 2015 \textbf{--} Jun 2020}
-        \resumeItemListStart
-            \resumeItem{Led weekly discussion sections, graded assignments, preformed lectures and designed homework exercises for undergraduate students}
-            \resumeItem{Collaborated with a team of other teaching assistants to ensure assignments, quizzes and exams were graded consistently and fairly}
+        	   \resumeItem{Led weekly discussion sections, graded exams, and occasionally designed homework assignments and performed guest lectures for undergraduate astronomy classes, some of which involved teaching basic data analysis and numerical modeling skills using Python and Excel}
+	   \resumeItem{Collaborated with a team of other teaching assistants to ensure exams and assignments were graded consistently and fairly}
         \resumeItemListEnd
         
   \resumeSubHeadingListEnd
@@ -233,67 +207,12 @@
   \vspace{2pt}
   \resumeSubHeadingListStart
     \small{\item{
-        \textbf{Programming:}{ C++, Python, NumPy, Pandas, PyTorch, scikit-learn, matplotlib, Seaborn, SQL \\ \vspace{3pt}
+        \textbf{Programming Languages: }{C++, Python, Bash}  \\ \vspace{3pt}
+        
+        \textbf{Tools and Environments: }{Git, NumPy, pandas, SLURM, matplotlib, seaborn}  \\ \vspace{3pt}
         
         \textbf{Communication:}{ 3 first-authored publications, 2 co-authored publications, 7 conference talks, 3 conference posters, 20 pop-sci articles published through \href{https://astrobites.org/}{astrobites}} \\ \vspace{3pt}
-        
-        \textbf{Leadership:}{ Worked on 5 separate science collaboration teams, Mentored and directed research for 6 undergraduate students} \\ \vspace{3pt}
-    }}}
-  \resumeSubHeadingListEnd
-  
-  %----------- Publications -----------
-  
-  \section{Publications}
-  
-  \vspace{2pt}
-  \resumeSubHeadingListStart
-    \small{\item{
-
-\PaperEntry{\underline{Wallace, S.}, Quinn, T.}{\href{https://doi.org/10.3847/1538-4357/ace89c}{Planetesimal accretion at short orbital periods}}{}{ApJ} {954(1):61}{2023} \\ \vspace{6pt}
-
-\PaperEntry{Hutter, J., Szaday, J., Choi, J., Liu, S., Kale, L., \underline{Wallace, S.}, Quinn, T.}{\href{https://doi.org/10.1109/IPDPS53621.2022.00079}{ParaTreeT: A Fast, General Framework for Spatial Tree Traversal}}{}{IEEE IPDPS} {762-772}{2022} \\ \vspace{6pt}
-
-\PaperEntry{\underline{Wallace, S.}, Quinn, T., Boley, A.}{\href{https://doi.org/10.1093/mnras/stab792}{Collision rates of planetesimals near mean-motion resonances}}{}{MNRAS} {503(4):5409–5424}{2021} \\ \vspace{6pt}
-
-\PaperEntry{\underline{Wallace, S.} and Quinn, T.}{\href{https://doi.org/10.1093/mnras/stz2284}{N-body simulations of terrestrial planet growth with resonant dynamical friction}}{}{MNRAS}{489(2):2159–2176}{2019}  \\ \vspace{6pt}
-
-\PaperEntry{Kim, J., Agertz, O., Teyssier, R., Butler, M., Ceverino, D., Choi, J., Feldmann, R., Keller, B., Lupi, A., Quinn, T., Revaz, Y., \underline{Wallace, S} (and 31 more)}{\href{https://doi.org/10.3847/1538-4357/833/2/202}{The AGORA High-resolution Galaxy Simulations Comparison Project. II. Isolated Disk Test}}{}{ApJ}{833(2):202}{2016} \\ \vspace{6pt}
-        
     }}
-  \resumeSubHeadingListEnd
-  
-    %----------- Proposals -----------
-    
-\section{Successful Proposals}
-  \resumeSubHeadingListStart
-    \small{\item{
- 
-\ProposalEntry{Contributed to Successful NSF Grant}{2020}{In Situ Formation of Short Period Terrestrial Planets} \\ \vspace{6pt}
-
-\ProposalEntry{Contributed to Successful XSEDE Computing Proposal}{2019, 2020, 2021}{N-body Simulations: Planets to Cosmology} \vspace{6pt}
-
- }}     
-  \resumeSubHeadingListEnd
-  
-\section{Conference Presentations}
-  \resumeSubHeadingListStart
-    \small{\item{
-    
- \ConferenceEntry{241st AAS Meeting, Dissertation Talk}{January 2023} \\ 
- \ConferenceEntry{Exoplanets in Our Backyard II, Poster}{November 2022} \\ 
- \ConferenceEntry{2nd N-body Shop Collaboration Meeting, Contributed Talk}{June 2022} \\
- \ConferenceEntry{53rd AAS Division for Dynamical Astronomy Meeting, Contributed Talk}{May 2022} \\ 
- \ConferenceEntry{TESS Science Conference II, Poster}{August 2021} \\ 
- \ConferenceEntry{Sagan Exoplanet Summer Workshop, Poster}{July 2021} \\ 
- \ConferenceEntry{52nd AAS Division for Dynamical Astronomy Meeting, Contributed Talk}{May 2021} \\ 
- \ConferenceEntry{1st N-body Shop Collaboration Meeting, Contributed Talk}{January 2021} \\ 
- \ConferenceEntry{50th AAS Division for Dynamical Astronomy Meeting, Contributed Talk}{June 2019} \\ 
-  \ConferenceEntry{49th AAS Division for Dynamical Astronomy Meeting, Contributed Talk}{April 2018} \\ 
-  \ConferenceEntry{223rd AAS Meeting, Poster}{January 2014} \\ 
- 
- \vspace{6pt}
-
- }}     
   \resumeSubHeadingListEnd
   
 \end{document}
